@@ -27,6 +27,10 @@ public class Energy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.energy);
 
+        cd1 = (CardView)findViewById(R.id.card_view);
+        cd2 = (CardView)findViewById(R.id.card_view2);
+        cd3 = (CardView)findViewById(R.id.card_view3);
+
 
         GraphView graph = (GraphView) findViewById(R.id.graph);
         LineGraphSeries<DataPoint> series = new LineGraphSeries<>(new DataPoint[] {
