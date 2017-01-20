@@ -23,7 +23,7 @@ public class Energy extends AppCompatActivity {
     CardView cd1;
     CardView cd2;
     CardView cd3;
-
+    GraphView graph;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
@@ -36,7 +36,7 @@ public class Energy extends AppCompatActivity {
         cd3 = (CardView)findViewById(R.id.card_view3);
 
 
-        GraphView graph = (GraphView) findViewById(R.id.graph);
+        graph = (GraphView) findViewById(R.id.graph);
         final LineGraphSeries<DataPoint> series = new LineGraphSeries<>(new DataPoint[] {
                 new DataPoint(0, 1),
                 new DataPoint(1, 5),
@@ -74,7 +74,8 @@ public class Energy extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 series2.setColor(Color.BLUE);
-                series.setThickness(10);
+                series2.setThickness(10);
+                graph.addSeries(series2);
                 Toast.makeText(Energy.this, "one", Toast.LENGTH_SHORT).show();
             }
         });
@@ -83,7 +84,8 @@ public class Energy extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 series3.setColor(Color.BLUE);
-                series.setThickness(10);
+                series3.setThickness(10);
+                graph.addSeries(series3);
                 Toast.makeText(Energy.this, "two", Toast.LENGTH_SHORT).show();
             }
         });
@@ -92,7 +94,8 @@ public class Energy extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 series4.setColor(Color.BLUE);
-                series.setThickness(10);
+                series4.setThickness(10);
+                graph.addSeries(series4);
                 Toast.makeText(Energy.this, "three", Toast.LENGTH_SHORT).show();
             }
         });
