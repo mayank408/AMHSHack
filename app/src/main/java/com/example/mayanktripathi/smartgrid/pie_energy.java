@@ -1,6 +1,8 @@
 package com.example.mayanktripathi.smartgrid;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
@@ -34,13 +36,10 @@ public class pie_energy extends AppCompatActivity {
         data.add(1 , (float) 2.4);
         data.add(2 , (float) 3.4);
         data.add(3 , (float) 4.4);
-
-
-
-
         createPieChart(data);
 
-
+        Vibrator v = (Vibrator) pie_energy.this.getSystemService(Context.VIBRATOR_SERVICE);
+        v.vibrate(500);
 
 
 

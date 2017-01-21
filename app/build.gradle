@@ -30,5 +30,8 @@ dependencies {
     compile 'com.android.support:cardview-v7:25.0.1'
     compile 'com.android.support:recyclerview-v7:25.0.1'
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.nightonke:boommenu:2.0.6'
+    compile 'com.robinhood.ticker:ticker:1.1.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
 }
