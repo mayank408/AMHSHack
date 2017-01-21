@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.jjoe64.graphview.GraphView android:layout_height="300dp"
-        android:layout_width="0dp"
+    <com.jjoe64.graphview.GraphView android:layout_height="377dp"
+        android:layout_width="362dp"
         android:id="@+id/graph"
         android:layout_marginTop="8dp"
         android:layout_marginRight="56dp"
@@ -36,6 +36,20 @@
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="49dp" />
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:text="Number Of Days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintRight_toRightOf="@+id/graph"
+        app:layout_constraintLeft_toLeftOf="@+id/graph"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/graph" />
 
 </android.support.constraint.ConstraintLayout>

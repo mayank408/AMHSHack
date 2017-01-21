@@ -1,0 +1,117 @@
+{
+  "project_info": {
+    "project_number": "1018301860669",
+    "firebase_url": "https://isgwhack.firebaseio.com",
+    "project_id": "isgwhack",
+    "storage_bucket": "isgwhack.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018301860669:android:b3fcd33ac2119540",
+        "android_client_info": {
+          "package_name": "com.example.dell.isgwhack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018301860669-iqgnpa13ock762hva7j2md77olk19ksc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dell.isgwhack",
+            "certificate_hash": "A267777CDF46A4C8DB2FC0B87E3774373F603623"
+          }
+        },
+        {
+          "client_id": "1018301860669-ubmpp5u9qkjbjv5dumg3fj85ntvh305b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqeinzc9YjkSnuLZT8_l84qGYI9Hxg0yQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018301860669-ubmpp5u9qkjbjv5dumg3fj85ntvh305b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018301860669:android:64ff860c12c4231b",
+        "android_client_info": {
+          "package_name": "com.example.mayanktripathi.smartadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018301860669-ubmpp5u9qkjbjv5dumg3fj85ntvh305b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqeinzc9YjkSnuLZT8_l84qGYI9Hxg0yQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018301860669:android:61d39d98bb0d1688",
+        "android_client_info": {
+          "package_name": "com.example.mayanktripathi.smartgrid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018301860669-ubmpp5u9qkjbjv5dumg3fj85ntvh305b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqeinzc9YjkSnuLZT8_l84qGYI9Hxg0yQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -26,9 +26,8 @@ public class Ticker extends AppCompatActivity {
             ticker.setText("15445");
             ticker.setText("234442");
             ticker.setText("42345");
-            ticker.setText("25525");
-            ticker.setText("35255");
-            ticker.setText("131344");
+        ticker.setText("13134");
+
 
     }
 }

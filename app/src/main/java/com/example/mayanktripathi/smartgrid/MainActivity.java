@@ -56,13 +56,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
         graph.getViewport().setYAxisBoundsManual(true);
+
         graph.getViewport().setMinY(-150);
         graph.getViewport().setMaxY(150);
 
         graph.getViewport().setXAxisBoundsManual(true);
         graph.getViewport().setMinX(4);
         graph.getViewport().setMaxX(80);
-
         // enable scaling and scrolling
         graph.getViewport().setScalable(true);
         graph.getViewport().setScalableY(true);

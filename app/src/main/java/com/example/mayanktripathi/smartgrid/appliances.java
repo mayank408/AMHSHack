@@ -133,7 +133,6 @@ public class appliances extends AppCompatActivity implements AdapterView.OnItemS
             String item = parent.getItemAtPosition(position).toString();
 
             // Showing selected spinner item
-            Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
 
         if(position == 0 ) {
             ac.clear();
@@ -168,7 +167,7 @@ public class appliances extends AppCompatActivity implements AdapterView.OnItemS
             acs.clear();
 
             acs.add("1");
-            acs.add("3");
+            acs.add("2");
             acs.add("3");
             acs.add("4");
             acs.add("5");
