@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Energy"/>
+        <activity android:name=".pie_energy"/>
     </application>
 
 </manifest>

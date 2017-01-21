@@ -27,7 +27,8 @@
             android:layout_height="70dp"
             android:layout_margin="5dp"
             card_view:cardCornerRadius="2dp"
-            card_view:contentPadding="10dp">
+            card_view:contentPadding="10dp"
+            android:visibility="gone">
 
         <TextView
             android:id="@+id/textView"
@@ -48,7 +49,8 @@
             android:layout_height="70dp"
             android:layout_margin="5dp"
             card_view:cardCornerRadius="2dp"
-            card_view:contentPadding="10dp">
+            card_view:contentPadding="10dp"
+            android:visibility="gone">
 
             <TextView
                 android:id="@+id/textView2"
@@ -69,7 +71,8 @@
             android:layout_height="70dp"
             android:layout_margin="5dp"
             card_view:cardCornerRadius="2dp"
-            card_view:contentPadding="10dp">
+            card_view:contentPadding="10dp"
+            android:visibility="gone">
 
             <TextView
                 android:id="@+id/textView3"

@@ -27,13 +27,27 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="30dp" />
 
+    <Button
+        android:text="Piechart"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_green_dark"
+        android:fontFamily="Helvetica"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/energy_pie"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="90dp" />
+
+
     <com.jjoe64.graphview.GraphView
         android:layout_width="match_parent"
-        android:layout_height="400dip"
+        android:layout_height="300dip"
         android:id="@+id/graph"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentTop="true" />
 
     <TextView
         android:text="Energy Profile"
