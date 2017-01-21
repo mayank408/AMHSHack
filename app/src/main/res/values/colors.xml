@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#121213</color>
-    <color name="colorPrimaryDark">#060606</color>
+    <color name="colorPrimary">#4e4e50</color>
+    <color name="colorPrimaryDark">#2d2b2b</color>
     <color name="colorAccent">#FF4081</color>
     <color name = "realData">#f90000</color>
     <color name="prediciton">#5ed7e1</color>
