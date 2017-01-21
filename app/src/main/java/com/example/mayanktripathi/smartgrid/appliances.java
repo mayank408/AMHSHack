@@ -109,9 +109,9 @@ public class appliances extends AppCompatActivity implements AdapterView.OnItemS
 
 
         // Creating adapter for spinner
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, categories);
-        ArrayAdapter<String> dataAdapter1 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, number);
-        ArrayAdapter<String> dataAdapter2 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, power);
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this, R.layout.spiner_layout, categories);
+        ArrayAdapter<String> dataAdapter1 = new ArrayAdapter<>(this,  R.layout.spiner_layout, number);
+        ArrayAdapter<String> dataAdapter2 = new ArrayAdapter<>(this,  R.layout.spiner_layout, power);
 
         // Drop down layout style - list view with radio button
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -154,7 +154,7 @@ public class appliances extends AppCompatActivity implements AdapterView.OnItemS
         }
 
 
-        ArrayAdapter<String> data = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, ac);
+        ArrayAdapter<String> data = new ArrayAdapter<>(this, R.layout.spiner_layout, ac);
         data.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner1.setVisibility(View.VISIBLE);
         text1.setVisibility(View.VISIBLE);
@@ -172,7 +172,7 @@ public class appliances extends AppCompatActivity implements AdapterView.OnItemS
             acs.add("4");
             acs.add("5");
 
-        ArrayAdapter<String> datas = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, acs);
+        ArrayAdapter<String> datas = new ArrayAdapter<>(this, R.layout.spiner_layout, acs);
         datas.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner2.setVisibility(View.VISIBLE);
         text2.setVisibility(View.VISIBLE);

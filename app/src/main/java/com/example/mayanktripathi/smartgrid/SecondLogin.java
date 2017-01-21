@@ -24,8 +24,8 @@ public class SecondLogin  extends AppCompatActivity {
         setContentView(R.layout.activity_second_login);
         BoomMenuButton bmb = (BoomMenuButton) findViewById(R.id.bmb);
         bmb.setButtonEnum(ButtonEnum.SimpleCircle);
-        bmb.setButtonPlaceEnum(ButtonPlaceEnum.SC_2_1);
-        bmb.setPiecePlaceEnum(PiecePlaceEnum.DOT_2_1);
+        bmb.setButtonPlaceEnum(ButtonPlaceEnum.SC_3_1);
+        bmb.setPiecePlaceEnum(PiecePlaceEnum.DOT_3_1);
        /* TextInsideCircleButton.Builder builder = new TextInsideCircleButton.Builder().normalImageRes(R.drawable.piechart).normalText("PieChart");
         bmb.addBuilder(builder);
         builder = new TextInsideCircleButton.Builder().normalImageRes(R.drawable.linegraph).normalText("LineGraph");
@@ -51,6 +51,18 @@ public class SecondLogin  extends AppCompatActivity {
                     }
                 });
         bmb.addBuilder(builder2);
+
+        SimpleCircleButton.Builder builder3 = new SimpleCircleButton.Builder()
+                .normalImageRes(R.drawable.piechart).listener(new OnBMClickListener() {
+                    @Override
+                    public void onBoomButtonClick(int index) {
+                        Intent i = new Intent(SecondLogin.this,UserCounter.class);
+                        startActivity(i);
+                    }
+                });
+        bmb.addBuilder(builder3);
+
+
     }
 
 }
