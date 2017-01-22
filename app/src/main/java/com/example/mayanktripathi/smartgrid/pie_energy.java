@@ -5,15 +5,22 @@ import android.os.Bundle;
 import android.os.Vibrator;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
+import com.github.mikephil.charting.listener.ChartTouchListener;
+import com.github.mikephil.charting.listener.OnChartGestureListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 import static com.example.mayanktripathi.smartgrid.R.id.chart;
 
@@ -26,20 +33,23 @@ public class pie_energy extends AppCompatActivity {
     PieChart chart;
     ArrayList<Float> data = new ArrayList<>();
 
+    CircleImageView suggestions;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.energy_pie);
 
-        data.add(0 , (float) 1.4);
-        data.add(1 , (float) 2.4);
-        data.add(2 , (float) 3.4);
-        data.add(3 , (float) 4.4);
-        createPieChart(data);
+        suggestions = (CircleImageView)findViewById(R.id.profile_image);
 
-        Vibrator v = (Vibrator) pie_energy.this.getSystemService(Context.VIBRATOR_SERVICE);
-        v.vibrate(500);
+
+
+        data.add(0 , (float) 0.6);
+        data.add(1 , (float) 0.2);
+        data.add(2 , (float) 0.15);
+        data.add(3 , (float) 0.05);
+        createPieChart(data);
 
 
 
@@ -58,12 +68,78 @@ public class pie_energy extends AppCompatActivity {
             entries.add(new PieEntry(data.get(i)));
         }
 
-        PieDataSet set = new PieDataSet(entries, "Election Results");
+        PieDataSet set = new PieDataSet(entries, "Results");
         set.setColors(ColorTemplate.COLORFUL_COLORS);
         PieData dataSet = new PieData(set);
+
+
+
         chart.setData(dataSet);
         chart.invalidate();
         chart.animateX(300);
+
+        chart.setOnChartGestureListener(new OnChartGestureListener() {
+            @Override
+            public void onChartGestureStart(MotionEvent me, ChartTouchListener.ChartGesture lastPerformedGesture) {
+                //Toast.makeText(pie_energy.this, "movement", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onChartGestureEnd(MotionEvent me, ChartTouchListener.ChartGesture lastPerformedGesture) {
+
+            }
+
+            @Override
+            public void onChartLongPressed(MotionEvent me) {
+
+                //Toast.makeText(pie_energy.this, "long pressed", Toast.LENGTH_SHORT).show();
+
+                suggestions.setVisibility(View.VISIBLE);
+                suggestions.setImageDrawable(getDrawable(R.drawable.suggestioncircletwo));
+
+            }
+
+            @Override
+            public void onChartDoubleTapped(MotionEvent me) {
+
+                Toast.makeText(pie_energy.this, "double pressed", Toast.LENGTH_SHORT).show();
+
+
+
+            }
+
+            @Override
+            public void onChartSingleTapped(MotionEvent me) {
+
+               // Toast.makeText(pie_energy.this, "single pressed", Toast.LENGTH_SHORT).show();
+                suggestions.setVisibility(View.VISIBLE);
+                suggestions.setImageDrawable(getDrawable(R.drawable.suggestioncircleone));
+
+
+
+            }
+
+            @Override
+            public void onChartFling(MotionEvent me1, MotionEvent me2, float velocityX, float velocityY) {
+
+                //Toast.makeText(pie_energy.this, "fling", Toast.LENGTH_SHORT).show();
+
+
+            }
+
+            @Override
+            public void onChartScale(MotionEvent me, float scaleX, float scaleY) {
+
+            }
+
+            @Override
+            public void onChartTranslate(MotionEvent me, float dX, float dY) {
+
+            }
+        });
+
+
+
 
     }
 

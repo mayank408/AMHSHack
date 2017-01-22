@@ -1,8 +1,11 @@
 package com.example.mayanktripathi.smartgrid;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.data.Entry;
@@ -16,6 +19,8 @@ import java.util.List;
 public class AnimateGraph extends AppCompatActivity {
 
 
+    TextView challenge;
+
 
 
 
@@ -24,6 +29,8 @@ public class AnimateGraph extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animate_graph);
         LineChart chart1 = (LineChart) findViewById(R.id.chart1);
+
+        challenge = (TextView)findViewById(R.id.challenge);
 
         List<Entry> dataset = new ArrayList<>();
 
@@ -114,6 +121,15 @@ LineChart chart2 = (LineChart) findViewById(R.id.chart2);
         chart2.setData(lineData);
         chart2.animateX(5000);
         chart2.invalidate();
+
+
+        challenge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(AnimateGraph.this , suggestions.class);
+                startActivity(i);
+            }
+        });
 
 
     }
