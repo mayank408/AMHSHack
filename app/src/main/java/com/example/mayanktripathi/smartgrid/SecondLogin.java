@@ -35,7 +35,7 @@ public class SecondLogin  extends AppCompatActivity {
                 .normalImageRes(R.drawable.linegraph).listener(new OnBMClickListener() {
                     @Override
                     public void onBoomButtonClick(int index) {
-                        Intent i = new Intent(SecondLogin.this,LineGraph.class);
+                        Intent i = new Intent(SecondLogin.this,AnimateGraph.class);
                         startActivity(i);
 
                     }
@@ -53,7 +53,7 @@ public class SecondLogin  extends AppCompatActivity {
         bmb.addBuilder(builder2);
 
         SimpleCircleButton.Builder builder3 = new SimpleCircleButton.Builder()
-                .normalImageRes(R.drawable.piechart).listener(new OnBMClickListener() {
+                .normalImageRes(R.drawable.bulb).listener(new OnBMClickListener() {
                     @Override
                     public void onBoomButtonClick(int index) {
                         Intent i = new Intent(SecondLogin.this,UserCounter.class);

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:id="@+id/activity_suggestions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.mayanktripathi.smartgrid.suggestions">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="128dp">
+        <ImageView
+            android:src="@drawable/sugg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView"
+            android:layout_gravity="bottom|right"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            app:ticker_animationDuration="1500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_cricle"
+            android:layout_marginRight="8dp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="128dp">
+        <ImageView
+            android:src="@drawable/suggfirst"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView2"
+            android:layout_gravity="bottom|right"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            app:ticker_animationDuration="1500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_cricle"
+            android:layout_marginRight="8dp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="16dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="128dp">
+        <ImageView
+            android:src="@drawable/suggsecond"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView3"
+            android:layout_gravity="bottom|right"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            app:ticker_animationDuration="1500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_cirle"
+            android:layout_marginRight="8dp" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="16dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="128dp">
+        <ImageView
+            android:src="@drawable/suggthird"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView4"
+            android:layout_gravity="bottom|right"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            app:ticker_animationDuration="1500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yello_circle"
+            android:layout_marginRight="8dp" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="16dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="128dp">
+        <ImageView
+            android:src="@drawable/suggfour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView1"
+            android:layout_gravity="bottom|right"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            app:ticker_animationDuration="1500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_cirle"
+        android:layout_marginRight="8dp" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="16dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="128dp">
+        <ImageView
+            android:src="@drawable/suggfive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView5"
+            android:layout_gravity="bottom|right"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            app:ticker_animationDuration="1500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yello_circle"
+            android:layout_marginRight="8dp" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+</ScrollView>

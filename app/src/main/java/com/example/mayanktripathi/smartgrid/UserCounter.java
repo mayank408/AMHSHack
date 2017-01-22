@@ -1,8 +1,11 @@
 package com.example.mayanktripathi.smartgrid;
 
+import android.app.Notification;
+import android.app.NotificationManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.NotificationCompat;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -39,9 +42,12 @@ public class UserCounter extends AppCompatActivity {
                 count++;
                 if(count>=4)
                 {
-                    Toast.makeText(UserCounter.this, "Counter ", Toast.LENGTH_SHORT).show();
                     DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
                     mDatabase.child("counter").setValue(count);
+                    NotificationManager manager = (NotificationManager) UserCounter.this.getSystemService(UserCounter.this.NOTIFICATION_SERVICE);
+                    Notification n = new Notification.Builder(UserCounter.this).setSmallIcon(R.drawable.alert).setContentTitle("High Usage Alert!").setContentText("Their is a sudden increase in your electricity consumption. Please take preventive measures!").setAutoCancel(true).build();
+                    manager.notify(0, n);
+
 
 
 

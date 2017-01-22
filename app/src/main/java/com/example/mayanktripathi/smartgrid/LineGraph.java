@@ -35,7 +35,7 @@ public class LineGraph extends AppCompatActivity {
         ticker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(LineGraph.this , Ticker.class);
+                Intent i = new Intent(LineGraph.this , suggestions.class);
                 startActivity(i);
             }
         });
@@ -119,7 +119,7 @@ public class LineGraph extends AppCompatActivity {
                 new DataPoint(50,    10.61726),
                 new DataPoint(51,    10.47144),
                 new DataPoint(52,    9.47264),
-                new DataPoint(53,    8.47776),
+                new DataPoint(53,    8.997776),
                 new DataPoint(54,    10.47007),
                 new DataPoint(55,    8.99234),
                 new DataPoint(56,    9.87659),
