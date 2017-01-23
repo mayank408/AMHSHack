@@ -45,10 +45,10 @@ public class pie_energy extends AppCompatActivity {
 
 
 
-        data.add(0 , (float) 0.6);
-        data.add(1 , (float) 0.2);
-        data.add(2 , (float) 0.15);
-        data.add(3 , (float) 0.05);
+        data.add(0 , (float) 60);
+        data.add(1 , (float) 20);
+        data.add(2 , (float) 15);
+        data.add(3 , (float) 05);
         createPieChart(data);
 
 
@@ -95,7 +95,7 @@ public class pie_energy extends AppCompatActivity {
                 //Toast.makeText(pie_energy.this, "long pressed", Toast.LENGTH_SHORT).show();
 
                 suggestions.setVisibility(View.VISIBLE);
-                suggestions.setImageDrawable(getDrawable(R.drawable.suggestioncircletwo));
+                suggestions.setImageDrawable(getDrawable(R.drawable.suggestioncirclethree));
 
             }
 
@@ -113,7 +113,7 @@ public class pie_energy extends AppCompatActivity {
 
                // Toast.makeText(pie_energy.this, "single pressed", Toast.LENGTH_SHORT).show();
                 suggestions.setVisibility(View.VISIBLE);
-                suggestions.setImageDrawable(getDrawable(R.drawable.suggestioncircleone));
+                suggestions.setImageDrawable(getDrawable(R.drawable.suggestioncircletwo));
 
 
 
